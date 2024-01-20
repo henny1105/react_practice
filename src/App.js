@@ -1,10 +1,14 @@
-import Swiper from './components/Swiper';
+import React, { useState } from 'react';
+import TabMenu from './components/TabMenu';
+import SwiperComponent from './components/SwiperComponent';
 
 function App() {
+	const [activeTab, setActiveTab] = useState(0);
+
 	return (
 		<div>
-			<h1>Welcome back!</h1>
-			<Swiper />
+			<TabMenu activeTab={activeTab} setActiveTab={setActiveTab} />
+			<SwiperComponent activeTab={activeTab} />
 		</div>
 	);
 }
