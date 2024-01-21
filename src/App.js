@@ -1,16 +1,8 @@
-import React, { useState } from 'react';
-import TabMenu from './components/TabMenu';
-import SwiperComponent from './components/SwiperComponent';
+import React from 'react';
+import Main from './components/Main';
 
 function App() {
-	const [activeTab, setActiveTab] = useState(0);
-
-	return (
-		<div>
-			<TabMenu activeTab={activeTab} setActiveTab={setActiveTab} />
-			<SwiperComponent activeTab={activeTab} />
-		</div>
-	);
+	return <Main />;
 }
 
 export default App;
